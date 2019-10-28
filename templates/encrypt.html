@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Encrypt
+{% endblock %}
+
+{% block main %}
+
+    <form enctype ="multipart/form-data" action="{{ url_for('encrypt') }}" method="post">
+        <fieldset>
+            <div class="form-group"> 
+            <center><input type="file" name="pic" accept="image/*" required></center>
+            <br>
+            <input autocomplete="off" autofocus class="form-control" name="text" placeholder="Secret Message" type="text" required/>
+            <br>
+            <br>
+            <input id = "key1" autocomplete="off" autofocus class="form-control" name="key1" placeholder="Secret Key (Any number from 1-26)" type="text" required/>
+            <br>
+            <br>
+            <button class="btn btn-default" type="submit" >Encrypt</button>
+            </div>
+        </fieldset>
+    </form>
+<br>
+<br>
+<p style="color:#FF0000; width:100%;">
+This webpage is for the purpose of demonstration only. 
+Safety of any information or file you provide is not gauranteed. 
+Please do not enter or upload any sensitive/personal information.
+</p>
+
+{% endblock %}

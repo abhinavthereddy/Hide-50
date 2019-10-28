@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Decrypt
+{% endblock %}
+
+{% block main %}
+<center>
+    <br>
+    <form enctype ="multipart/form-data" action="{{ url_for('decrypt') }}" method="post">
+        <fieldset>
+            <div class="form-group"> 
+              <input type="file" name="pic" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="key2" placeholder="Secret Key" type="text" required/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit">Decrypt</button>
+            </div>
+        </fieldset>
+    </form>
+</center>
+{% endblock %}

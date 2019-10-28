@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+    <img alt="Sorry!" height = "200" width = "50%" border = "0" align="middle" src="{{ url_for('static', filename='oops.png') }}"/>
+    <br>
+    <br>
+    <br>
+    <div style="position: relative">
+    <p style="font-size:250%; color:#FF0000; width:100%; text-align: center">{{  error  }}
+    </p>
+    </div>
+    
+    
+{% endblock %}

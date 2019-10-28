@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+
+{% endblock %}
+
+{% block main %}
+<br>
+    <p>What would you like to do?</p>
+    <br>
+    <div id = "indexform">
+    <form action="{{ url_for('encrypt') }}" method="get">
+        <div class="form-group" style='width:50%; float:left'>
+            <button class="btn btn-default" type="submit">Encrypt</button>
+        </div>
+    </form>
+    <form action="{{ url_for('decrypt') }}" method="get">
+        <div class="form-group" style='width:50%; float:right'>
+            <button class="btn btn-default" type="submit">Decrypt</button>
+        </div>
+    </form>
+    </div>
+{% endblock %}

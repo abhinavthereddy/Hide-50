@@ -1,0 +1,7 @@
+pip3 install --user -r requirements.txt
+
+
+flask run
+
+
+phpliteadmin data.db

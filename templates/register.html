@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('register') }}" method="post">
+        <fieldset>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text" required/>
+                <br>
+                <br>
+                <input autocomplete="off" autofocus class="form-control" id="email" name="email" placeholder="Enter Email" type="text" required/>
+                <br>
+                <br>
+                <input autocomplete="off" autofocus class="form-control" id="remail" name="remail" placeholder="Re-enter Email" type="password" required/>
+                <br>
+                <br>
+                <input class="form-control" name="password" id="password" placeholder="Password" type="password" required/>
+                <br>
+                <br>
+                <input class="form-control" name="repassword" id="repassword" placeholder="Re-enter Password" type="password" required/>
+                <br>
+                <br>
+                <button class="btn btn-default" type="submit" onclick="return formValidationRegister();">Register</button>
+            </div>
+        </fieldset>
+    </form>
+    
+<br>
+<br>
+<p style="color:#FF0000; width:100%;">
+This webpage is for the purpose of demonstration only. 
+Safety of any information you provide is not gauranteed. 
+Please do not enter any sensitive/personal information.
+</p>
+    
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+
+{% endblock %}

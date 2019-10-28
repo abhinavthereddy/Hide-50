@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+    <img alt="Sorry!" src="{{ url_for('static', filename='oops.png') }}"/>
+{% endblock %}
