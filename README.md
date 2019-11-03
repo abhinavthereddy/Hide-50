@@ -4,12 +4,12 @@ This repository present a web-based tool that allows users to discreetly transfe
 
 
 # Requirements:
-Flask
-Flask-Session
-passlib
-SQLAlchemy
-python3
-cs50
+Flask<br />
+Flask-Session<br />
+passlib<br />
+SQLAlchemy<br />
+python3<br />
+cs50<br />
 
 # How to run?
 1. Open terminal in root folder.
