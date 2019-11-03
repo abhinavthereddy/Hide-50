@@ -1,0 +1,1 @@
+This Steganography algorithm used in this project belongs to Cédric Bonhomme, and can be found at https://github.com/cedricbonhomme/Stegano
